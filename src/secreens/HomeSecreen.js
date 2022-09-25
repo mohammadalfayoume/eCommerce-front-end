@@ -8,8 +8,8 @@ const HomeSecreen = () => {
     <>
       <h1>Latest Products</h1>
       <Row>
-        {products.map((product,idx) => (
-          <Col sm={12} md={6} lg={4} xl={3} key={idx}>
+        {products.map((product) => (
+          <Col sm={12} md={6} lg={4} xl={3} key={product._id}> adding key to the element to make it unique
             <Product product={product}/>
           </Col>
         ))}
