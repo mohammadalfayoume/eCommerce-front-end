@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col, Image, Card, Button, ListGroup } from 'react-bootstrap'
 import Rating from '../components/Rating'
-import { listProductDetails } from '../actions/productActions'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
+import { listProductDetails } from '../actions/productActions'
 
 const ProductSecreen = () => {
   let { id } = useParams()
